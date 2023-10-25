@@ -1,0 +1,21 @@
+_format_version: "2.1"
+
+services:
+  - name: index
+    url: http://host.docker.internal:5000
+    routes:
+      - name: index
+        paths:
+          - /
+  - name: url
+    url: http://host.docker.internal:5000/url
+    routes:
+      - name: url
+        paths:
+          - /url
+  - name: download
+    url: http://host.docker.internal:5000/download
+    routes:
+      - name: download
+        paths:
+          - /download
